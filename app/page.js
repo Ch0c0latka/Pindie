@@ -7,9 +7,9 @@ import { Promo } from "./components/Promo/Promo";
 import { useGetDataByCategory } from "./api/api-hooks";
 import { Preloader } from "@/app/components/Preloader/Preloader";
 
-export default async function Home() {
-  const popularGames = await useGetDataByCategory(endpoints.games, "popular");
-  const newGames = await useGetDataByCategory(endpoints.games, "new");
+export default  function Home() {
+  const popularGames = useGetDataByCategory(endpoints.games, "popular");
+  const newGames = useGetDataByCategory(endpoints.games, "new");
   return (
     <main className="main">
       <Banner />
