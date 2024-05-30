@@ -1,7 +1,7 @@
-export const BASE_URL = 'https://pindie-project.nomorepartiesco.ru'
+export const BASE_URL = 'https://pindie-project.nomorepartiesco.ru/api'
 
 export const endpoints = {
-  games: `${BASE_URL}/games/api`,
+  games: `${BASE_URL}/games`,
   auth: `${BASE_URL}/auth/login`,
   me: `${BASE_URL}/me`,
 }
